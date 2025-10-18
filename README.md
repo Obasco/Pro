@@ -37,3 +37,43 @@ Profile-card/
 ├── Script.js
 └── Style.css
 
+
+
+## ⚙️ Technologies Used
+- **HTML5** → Semantic structure and accessibility  
+- **CSS3** → Responsive design using Flexbox  
+- **Vanilla JavaScript (ES6)** → Real-time timestamp logic
+## 🌍 Live Demo
+🔗 **Live Site:** [https://profile-web23.netlify.app/](https://profile-web23.netlify.app/)  
+🔗 **GitHub Repository:** [https://github.com/Obasco/Profile-card](https://github.com/Obasco/Profile-card)
+## 🧩 How to Run Locally
+To view or edit this project locally:
+```bash
+git clone https://github.com/Obasco/Profile-card.git
+cd Profile-card
+open index.html
+No additional setup is required — this is a pure HTML/CSS/JS project.
+
+✨ Author
+Obayemi Olumide
+Frontend Developer 🧑‍💻 | Designer 🎨 | Basketball Lover 🏀
+
+“Frontend development is where creativity meets logic — I love bringing ideas to life through clean design and efficient code.”
+🌐 Live Portfolio: https://profile-web23.netlify.app/
+
+🏁 Submission
+✅ Task: Frontend Wizards — Stage 0 (Profile Card)
+🕒 Submission Date: October 2025
+🚀 Status: Completed and Deployed Successfully
+
+pgsql
+Copy code
+
+---
+
+✅ **Instructions:**  
+- Copy everything above (inside the grey box)  
+- Paste it into a new file called `README.md`  
+- Save → `git add .` → `git commit -m "Added clean README"` → `git push`  
+
+It’ll show up perfectly on GitHub — no broken lines, no weird markdown spacing.
