@@ -48,7 +48,6 @@ Profile-card/
 🔗 **GitHub Repository:** [https://github.com/Obasco/Profile-card](https://github.com/Obasco/Profile-card)
 ## 🧩 How to Run Locally
 To view or edit this project locally:
-```bash
 git clone https://github.com/Obasco/Profile-card.git
 cd Profile-card
 open index.html
@@ -66,8 +65,6 @@ Frontend Developer 🧑‍💻 | Designer 🎨 | Basketball Lover 🏀
 🕒 Submission Date: October 2025
 🚀 Status: Completed and Deployed Successfully
 
-pgsql
-Copy code
 
 ---
 
@@ -76,4 +73,4 @@ Copy code
 - Paste it into a new file called `README.md`  
 - Save → `git add .` → `git commit -m "Added clean README"` → `git push`  
 
-It’ll show up perfectly on GitHub — no broken lines, no weird markdown spacing.
+
