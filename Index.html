@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obayemi Olumide Enoch | Profile Card</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div data-testid="test-profile-card" class="container">
+      <div class="pfp-card">
+        <div class="img">
+          <img 
+            src="https://i.pinimg.com/736x/c8/76/7c/c8767cf221587c6a2941daeec424ec3c.jpg" 
+            alt="Obayemi Olumide Enoch avatar"
+            data-testid="test-user-avatar"
+          >
+        </div>
+
+        <div class="heading">
+          <h1 data-testid="test-user-name">OBAYEMI OLUMIDE ENOCH</h1>
+          <p data-testid="test-user-bio">
+             Am Frontend developer passionate about crafting intuitive and responsive user experiences. 
+            When I’m not coding, you’ll probably find me on the basketball court or exploring creative design ideas.
+          </p>
+          <p class="time">
+            Current Time (ms): <span data-testid="test-user-time"></span>
+          </p>
+        </div>
+      </div>
+
+      <nav class="social" data-testid="test-user-social-links">
+        <ul>
+          <li>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <a href="https://x.com/nxtgen_prime" target="_blank"  data-testid="test-user-social-twitter">Twitter</a></li>
+          <li>
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/Obasco" target="_blank"  data-testid="test-user-social-github">GitHub</a></li>
+          <li>
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/obayemi-olumide-223700325/" target="_blank" " data-testid="test-user-social-linkedin">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="flex">
+      <div class="boxes hobbies">
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Playing basketball</li>
+          <li>Listening to music</li>
+          <li>Learning new design techniques</li>
+          <li>Exploring web tools</li>
+        </ul>
+      </div>
+
+      <div class="boxes dislikes">
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Slow internet</li>
+          <li>Messy code</li>
+          <li>Unresponsive designs</li>
+          <li>Too many Bugs</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <script src="Script.js"></script>
+</body>
+</html>
