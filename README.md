@@ -30,3 +30,10 @@ This profile card showcases a simple yet elegant layout that meets all task requ
 
 ## 📂 Folder Structure
 
+
+Profile-card/
+│
+├── index.html
+├── Script.js
+└── Style.css
+
