@@ -145,6 +145,33 @@ img {
   font-size: 16px;
 }
 
+
+.navbar{
+  height:90px;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex ;
+
+}
+
+
+
+
+.navbar 
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+ 
+}
+
+
+
+
+
+
+
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {
   .pfp-card {
