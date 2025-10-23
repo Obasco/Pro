@@ -7,7 +7,7 @@ body {
 
 /* ===== Container ===== */
 .container {
-  width: 85%;
+  width: 80%;
   margin: 30px auto;
   padding: 20px;
   background: #ffffff;
@@ -145,44 +145,39 @@ img {
   font-size: 16px;
 }
 
-
-.navbar{
-  height:90px;
-  width: 100%;
+/* ===== Navbar ===== */
+.navbar {
+  height: 90px;
+  width: 90%;
+  max-width: 1200px;
   background-color: #ffffff;
-  display: flex ;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 40px;
-
+  padding: 0 40px;
+  margin: 20px auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1000;
 }
 
-
-
-
-.navbar .nav-img{
+/* Logo */
+.navbar .nav-img {
   height: 70px;
   width: 70px;
   border-radius: 50%;
-  margin: 10px;
+  object-fit: cover;
 }
 
-.navbar .nav-links {
-  flex: 1;
-  margin-top: 10px;
-  margin-left: 800px;
-}
- 
-
-
-
+/* Desktop Nav Links */
 .navbar .nav-links .links {
   display: flex;
   gap: 40px;
   list-style: none;
-  
+  margin: 0;
+  padding: 0;
 }
-
-
 
 .navbar .nav-links .links a {
   position: relative;
@@ -191,38 +186,170 @@ img {
   font-weight: 600;
   font-size: 17px;
   transition: color 0.3s ease;
+  padding: 10px 0;
 }
 
-/* underline transition effect */
+/* Hover underline */
 .navbar .nav-links .links a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px; /* space below text */
+  bottom: -5px;
   width: 0%;
   height: 2px;
   background: #ff5e62;
   transition: width 0.3s ease;
 }
 
-/* on hover */
 .navbar .nav-links .links a:hover {
-  color: #222; /* optional color change */
+  color: #222;
 }
 
 .navbar .nav-links .links a:hover::after {
   width: 100%;
 }
 
+/* Menu Toggle Button */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-toggle:hover {
+  background-color: #f8f8f8;
+  transform: scale(1.1);
+}
+
+/* Icon styles */
+.menu-toggle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #ff5e62;
+  transition: all 0.3s ease;
+}
+
+/* Bars visible by default */
+.menu-toggle .fa-bars {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* X hidden initially */
+.menu-toggle .fa-xmark {
+  opacity: 0;
+  visibility: hidden;
+  font-size: 22px;
+}
+
+/* Toggle active icon */
+.menu-toggle.active .fa-bars {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu-toggle.active .fa-xmark {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ===== Mobile Styles ===== */
+@media (max-width: 768px) {
+  .navbar {
+    width: 90%;
+    padding: 0 20px;
+    height: 80px;
+  }
+
+  /* Show toggle button */
+  .menu-toggle {
+    display: flex;
+    z-index: 1001;
+  }
+
+  /* Hide desktop nav links by default */
+  /* .navbar .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: #ffffff;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 300px;
+    padding: 0;
+    transition: max-height 0.4s ease-in-out, padding 0.3s ease;
+    z-index: 999;
+  } */
+
+--------------
+
+  /* Stack links vertically */
+  .navbar .nav-links .links {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar .nav-links .links li {
+    width: 100%;
+  }
+
+  .navbar .nav-links .links a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .navbar .nav-links .links a:last-child {
+    border-bottom: none;
+  }
+
+  /* Remove hover underline effect on mobile */
+  .navbar .nav-links .links a::after {
+    display: none;
+  }
+}
 
 
+/* ===== Extra small devices ===== */
+@media (max-width: 480px) {
+  .navbar {
+    height: 70px;
+  }
 
+  .navbar .nav-img {
+    height: 60px;
+    width: 60px;
+  }
 
+  .menu-toggle {
+    width: 35px;
+    height: 35px;
+  }
 
+  .menu-toggle i {
+    font-size: 20px;
+  }
 
-
-
-
+  .menu-toggle .fa-xmark {
+    font-size: 20px;
+  }
+}
 
 
 

@@ -8,17 +8,22 @@
 </head>
 <body>
 
-  <!-- ===== Navbar ===== -->
-  <nav class="navbar">
-    <img src="https://i.pinimg.com/736x/c8/76/7c/c8767cf221587c6a2941daeec424ec3c.jpg" alt="Logo" class="nav-img">
-    <div class="nav-links">
-      <ul class="links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+<nav class="navbar">
+  <img src="https://i.pinimg.com/736x/c8/76/7c/c8767cf221587c6a2941daeec424ec3c.jpg" alt="Logo" class="nav-img">
+  
+  <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+    <i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+
+  <div class="nav-links" id="nav-links">
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 <main data-testid="test-about-page" class="container">
   <h1>About Me</h1>
 
@@ -88,5 +93,7 @@
   </section>
 </main>
 
+
+<script src="Script.js"></script>
 </body>
 </html>
